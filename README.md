@@ -1,29 +1,4 @@
 # ADHD & Autism Detection System
-<p align="center">
-<img src="./static/logo.png" width="100px" align="center">
-</p>
-
-<p align="center">
-The project aims early detection of 'Autism' & 'ADHD' through a web platform fueled by machine learning. 
-</p>
-<br><br>
-<p align="center">
-<img src="./static/banner.PNG" width="500px" align="center">
-</p>
-<br>
-
-<br>
-<br>
-
-<table align="center">
-   <tr>
-      <th><img src="./static/before.jpg" width="400px" ></th>
-      <th><img src="./static/after.jpg" width="400px" ></th>
-   </tr>
-</table>
-
-<br>
-<br>
 
 ## Approach
 1. Get real-time info of user's eye movement using OpenCV.
