@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Oculus | ADHD</title>
+
+    <style>
+        .card {
+            background-color: rgb(39, 38, 38);
+            transition-delay: 2s ease;
+            color: white;
+            border: 1px solid #FD6A02;
+            height: 4rem;
+            width: 10rem;
+            margin-top: 5rem;
+        }
+
+        .card:hover {
+            -webkit-box-shadow: -1px 0px 17px 4px rgba(253, 106, 2, 1);
+            -moz-box-shadow: -1px 0px 17px 4px rgba(253, 106, 2, 1);
+            box-shadow: -1px 0px 17px 4px rgba(253, 106, 2, 1);
+        }
+
+        .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active { 
+            border: 1px solid #FD6A02;
+            background-color: rgb(39, 38, 38);
+        }
+
+        .nav-tabs {
+            border-bottom: 1px solid #FD6A02;
+        }
+    </style>
+</head>
+
+<body style="background-color: rgb(39, 38, 38);">
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="{{ url_for('home') }}" style="color: white;">
+            <img src="{{ url_for('static', filename='logo.png') }}" alt="" srcset="" width="100px">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="{{ url_for('about') }}" style="color: white;">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('test') }}" style="color: white;">Take Test</a>
+                </li>
+                <li class="nav-item">
+                    <!-- <a class="nav-link" href="#" style="color: white;">Link</a> -->
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br>
+
+        <center>
+            <div class="card" style="border-radius: 1rem;">
+
+                <center>
+                    <div class="card-body">
+                        <a href="{{ url_for('adhdRes') }}" style="text-decoration: none; color: white">
+                            <h5 class="card-title"> Start Test!
+                            </h5>
+                        </a>
+                    </div>
+                </center>
+            </div>
+
+            <br><br>
+
+        <ul class="nav nav-tabs" id="myTab" role="tablist" style="width: 80%;">
+            <li class="nav-item">
+              <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">EASY</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">MEDIUM</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">HARD</a>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <div class="container"><br><br>
+                <p style="color: white; font-size: xx-large;">Mahabharat kể câu chuyện về vương quốc Hastinapur, một vương quốc được cai trị bởi dòng họ Kuru, nơi các anh em Kaurava và Pandava tranh giành ngai vàng. Pandavas là những người con của Pandu, và Kauravas là những người con của Dhritrashtra. Yudhistira (anh cả của nhà Pandava) và Duryodhan, anh cả của nhà Kaurava, đều tuyên bố là người kế vị ngai vàng.</p>
+                <p style="color: #FD6A02; font-size: large;">Nguồn: Mahabharat - Sử thi Ấn Độ cổ đại</p>
+            </div>
+            </div>
+            
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <div class="container"><br>
+                <p style="color: white;  font-size: xx-large;">Câu chuyện bắt đầu với Devavrata, con trai của Shantanu và Ganga, và là đệ tử của Parshuram. Devavrata được đặt tên là Bhisma sau khi thề độc thân để thực hiện mong muốn của cha mình là kết hôn với Satyavati. Ông cũng thề nguyện phục vụ ngai vàng của Hastinapur và được ban cho icchya-mrityu (khả năng sống mãi mãi, miễn là ông không chọn cái chết). Bhisma từ bỏ ngai vàng chính đáng của mình, và Satyavati cai trị vương quốc với tư cách là Rajmaata (mẹ của vua) sau khi chồng bà qua đời. Con trai bà, Vichitravirya, là một người nghiện rượu phụ thuộc vào Bhisma. Ông không thể cai trị vương quốc, khiến Satyavati quyết định rằng con trai tương lai của Vichitravirya phải cai trị vương quốc.</p>
+                <p style="color: #FD6A02; font-size: large;">Nguồn: Mahabharat - Sử thi Ấn Độ cổ đại</p>
+                </div>
+            </div>
+            
+            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                <div class="container"><br>
+                <p style="color: white; font-size: xx-large;">Tại Kuntibhoj, Công chúa Kunti nhận được phước lành từ đạo sĩ Durvasa cho phép bà có thể triệu hồi bất kỳ vị thần nào và sinh con với ngài. Bà thử nghiệm phước lành này bằng cách triệu hồi Thần Mặt Trời và được ban cho một người con trai tên là Karna. Là một phụ nữ chưa lập gia đình, Kunti đã thả Karna trôi trên sông Hằng để tránh sự xấu hổ. Sau đó bà kết hôn với Pandu, con trai của Vichitravirya, và triệu hồi các vị thần khác để sinh cho bà ba người con: Yudhistira, Bhima và Arjuna. Madri, người vợ thứ hai của Pandu, triệu hồi Ashwini Kumaras để sinh Nakula và Sahadeva. Ahe và Pandu chết vì lời nguyền của Rishi Kimdam, và Kunti quyết định nuôi dưỡng năm đứa trẻ cùng nhau.
+
+Karna được nuôi dưỡng bởi một người đánh xe tên là Adirath và vợ ông, Radha. Thuộc về một gia đình đẳng cấp thấp, ông thường bị đối xử tệ bạc nhưng trở thành một cung thủ tài ba. Danh tính thật của Karna chỉ được tiết lộ vào cuối cuộc chiến Kurukshetra.</p>
+                <p style="color: #FD6A02; font-size: large;">Nguồn: Mahabharat - Sử thi Ấn Độ cổ đại</p>
+                </div>
+            </div>
+        </div>
+          </div>
+
+    
+            <h1 style="color: #FD6A02;">{{prediction}}</h1>
+        </center>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
